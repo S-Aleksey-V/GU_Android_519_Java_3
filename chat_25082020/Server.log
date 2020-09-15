@@ -1,0 +1,56 @@
+сен 15, 2020 9:58:21 AM server.Server <init>
+SEVERE: Сервер запущен!
+сен 15, 2020 9:58:33 AM server.Server <init>
+INFO: Клиент подключился
+сен 15, 2020 9:58:33 AM server.Server <init>
+INFO: socket.getRemoteSocketAddress(): /127.0.0.1:53518
+сен 15, 2020 9:58:33 AM server.Server <init>
+INFO: socket.getLocalSocketAddress() /127.0.0.1:8189
+сен 15, 2020 9:58:54 AM server.Server <init>
+INFO: Клиент подключился
+сен 15, 2020 9:58:54 AM server.Server <init>
+INFO: socket.getRemoteSocketAddress(): /127.0.0.1:53525
+сен 15, 2020 9:58:54 AM server.Server <init>
+INFO: socket.getLocalSocketAddress() /127.0.0.1:8189
+сен 15, 2020 10:03:51 AM server.Server <init>
+SEVERE: Сервер запущен!
+сен 15, 2020 10:04:02 AM server.Server <init>
+INFO: Клиент подключился
+сен 15, 2020 10:04:02 AM server.Server <init>
+INFO: socket.getRemoteSocketAddress(): /127.0.0.1:53551
+сен 15, 2020 10:04:02 AM server.Server <init>
+INFO: socket.getLocalSocketAddress() /127.0.0.1:8189
+сен 15, 2020 10:06:21 AM server.Server <init>
+SEVERE: Сервер запущен!
+сен 15, 2020 10:06:31 AM server.Server <init>
+INFO: Клиент подключился
+сен 15, 2020 10:06:31 AM server.Server <init>
+INFO: socket.getRemoteSocketAddress(): /127.0.0.1:53568
+сен 15, 2020 10:06:31 AM server.Server <init>
+INFO: socket.getLocalSocketAddress() /127.0.0.1:8189
+сен 15, 2020 10:07:28 AM server.Server <init>
+SEVERE: Сервер запущен!
+сен 15, 2020 10:07:40 AM server.Server <init>
+INFO: Клиент подключился
+сен 15, 2020 10:07:40 AM server.Server <init>
+INFO: socket.getRemoteSocketAddress(): /127.0.0.1:53582
+сен 15, 2020 10:07:40 AM server.Server <init>
+INFO: socket.getLocalSocketAddress() /127.0.0.1:8189
+сен 15, 2020 10:14:52 AM server.Server <init>
+SEVERE: Сервер запущен!
+сен 15, 2020 10:15:04 AM server.Server <init>
+INFO: Клиент подключился
+сен 15, 2020 10:15:04 AM server.Server <init>
+INFO: socket.getRemoteSocketAddress(): /127.0.0.1:53680
+сен 15, 2020 10:15:04 AM server.Server <init>
+INFO: socket.getLocalSocketAddress() /127.0.0.1:8189
+сен 15, 2020 10:16:16 AM server.Server <init>
+SEVERE: Сервер запущен!
+сен 15, 2020 10:16:44 AM server.Server <init>
+INFO: Клиент подключился
+сен 15, 2020 10:16:44 AM server.Server <init>
+INFO: socket.getRemoteSocketAddress(): /127.0.0.1:53693
+сен 15, 2020 10:16:44 AM server.Server <init>
+INFO: socket.getLocalSocketAddress() /127.0.0.1:8189
+сен 15, 2020 10:18:04 AM server.Server <init>
+SEVERE: Сервер запущен!

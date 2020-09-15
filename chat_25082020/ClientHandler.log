@@ -1,0 +1,112 @@
+сен 15, 2020 9:58:34 AM server.ClientHandler sendMsg
+INFO: /authok alex
+сен 15, 2020 9:58:34 AM server.ClientHandler sendMsg
+INFO: /clientlist alex 
+сен 15, 2020 9:58:34 AM server.ClientHandler lambda$new$0
+INFO: Клиент %s подключился 
+
+сен 15, 2020 9:58:36 AM server.ClientHandler lambda$new$0
+INFO: Клиент отключилсяalex
+сен 15, 2020 9:58:54 AM server.ClientHandler sendMsg
+INFO: /authok alex
+сен 15, 2020 9:58:54 AM server.ClientHandler sendMsg
+INFO: /clientlist alex 
+сен 15, 2020 9:58:54 AM server.ClientHandler lambda$new$0
+INFO: Клиент %s подключился 
+
+сен 15, 2020 9:58:58 AM server.ClientHandler sendMsg
+INFO: alex : ghd
+сен 15, 2020 9:59:10 AM server.ClientHandler sendMsg
+INFO: alex : вылетают ошибки иногда при подключении
+сен 15, 2020 9:59:15 AM server.ClientHandler lambda$new$0
+INFO: Клиент отключилсяalex
+сен 15, 2020 10:04:02 AM server.ClientHandler sendMsg
+INFO: /authok alex
+сен 15, 2020 10:04:02 AM server.ClientHandler sendMsg
+INFO: /clientlist alex 
+сен 15, 2020 10:04:02 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент %s подключился 
+
+сен 15, 2020 10:04:06 AM server.ClientHandler sendMsg
+INFO: alex : привет
+сен 15, 2020 10:04:16 AM server.ClientHandler sendMsg
+INFO: alex : проверка изменения ника
+сен 15, 2020 10:04:25 AM server.ClientHandler sendMsg
+INFO: /yournickis alexey
+сен 15, 2020 10:04:25 AM server.ClientHandler sendMsg
+INFO: Ваш ник изменён на alexey
+сен 15, 2020 10:04:25 AM server.ClientHandler lambda$new$0
+INFO: alex Поменял ник на alexey
+сен 15, 2020 10:04:25 AM server.ClientHandler sendMsg
+INFO: /clientlist alexey 
+сен 15, 2020 10:04:29 AM server.ClientHandler lambda$new$0
+INFO: alexey Клиент отключился
+сен 15, 2020 10:06:31 AM server.ClientHandler sendMsg
+INFO: /authok alexey
+сен 15, 2020 10:06:31 AM server.ClientHandler sendMsg
+INFO: /clientlist alexey 
+сен 15, 2020 10:06:31 AM server.ClientHandler lambda$new$0
+INFO: alexey Клиент %s подключился 
+
+сен 15, 2020 10:06:34 AM server.ClientHandler sendMsg
+INFO: alexey : asfasdf
+сен 15, 2020 10:06:37 AM server.ClientHandler sendMsg
+INFO: alexey : првыи
+сен 15, 2020 10:06:44 AM server.ClientHandler sendMsg
+INFO: /yournickis alex
+сен 15, 2020 10:06:44 AM server.ClientHandler sendMsg
+INFO: Ваш ник изменён на alex
+сен 15, 2020 10:06:44 AM server.ClientHandler lambda$new$0
+INFO: alexey Поменял ник на alex
+сен 15, 2020 10:06:44 AM server.ClientHandler sendMsg
+INFO: /clientlist alex 
+сен 15, 2020 10:06:46 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент отключился
+сен 15, 2020 10:07:40 AM server.ClientHandler sendMsg
+INFO: /authok alex
+сен 15, 2020 10:07:40 AM server.ClientHandler sendMsg
+INFO: /clientlist alex 
+сен 15, 2020 10:07:40 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент %s подключился 
+
+сен 15, 2020 10:07:43 AM server.ClientHandler sendMsg
+INFO: alex : gsagdasf
+сен 15, 2020 10:07:44 AM server.ClientHandler sendMsg
+INFO: alex : asdfasdf
+сен 15, 2020 10:07:46 AM server.ClientHandler sendMsg
+INFO: alex : aaaaaa
+сен 15, 2020 10:07:47 AM server.ClientHandler sendMsg
+INFO: alex : aaaaaa
+сен 15, 2020 10:07:49 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент отключился
+сен 15, 2020 10:15:04 AM server.ClientHandler sendMsg
+INFO: /authok alex
+сен 15, 2020 10:15:04 AM server.ClientHandler sendMsg
+INFO: /clientlist alex 
+сен 15, 2020 10:15:04 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент %s подключился 
+
+сен 15, 2020 10:15:06 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент отключился
+сен 15, 2020 10:16:44 AM server.ClientHandler sendMsg
+INFO: /authok alex
+сен 15, 2020 10:16:44 AM server.ClientHandler sendMsg
+INFO: /clientlist alex 
+сен 15, 2020 10:16:44 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент подключился 
+
+сен 15, 2020 10:16:56 AM server.ClientHandler sendMsg
+INFO: alex : Всё готово и вроде работает
+сен 15, 2020 10:16:58 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент отключился
+сен 15, 2020 10:18:14 AM server.ClientHandler sendMsg
+INFO: /authok alex
+сен 15, 2020 10:18:14 AM server.ClientHandler sendMsg
+INFO: /clientlist alex 
+сен 15, 2020 10:18:14 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент подключился 
+
+сен 15, 2020 10:18:16 AM server.ClientHandler sendMsg
+INFO: alex : asdasd
+сен 15, 2020 10:18:17 AM server.ClientHandler lambda$new$0
+INFO: alex Клиент отключился
