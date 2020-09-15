@@ -9,21 +9,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ListView;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import javax.swing.*;
+import java.io.*;
 import java.net.Socket;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
@@ -113,6 +111,8 @@ public class Controller implements Initializable {
                         if (str.startsWith("/authok ")) {
                             nick = str.split("\\s")[1];
                             setAuthenticated(true);
+                            createHistory();
+                            loadHistory();
                             break;
                         }
 
@@ -137,6 +137,8 @@ public class Controller implements Initializable {
                     while (true) {
                         String str = in.readUTF();
 
+
+
                         if (str.startsWith("/")) {
                             if (str.equals("/end")) {
                                 setAuthenticated(false);
@@ -154,9 +156,12 @@ public class Controller implements Initializable {
 
                         } else {
                             textArea.appendText(str + "\n");
+                            saveHistory();
+                            saveAllHistory();
+
                         }
                     }
-                }catch (RuntimeException e)   {
+                } catch (RuntimeException e) {
                     System.out.println(e.getMessage());
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -254,4 +259,69 @@ public class Controller implements Initializable {
             e.printStackTrace();
         }
     }
+
+
+    private void createHistory() {
+        File history = new File("history_" + nick + ".txt");
+        if (!history.exists()) {
+            try {
+                history.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void saveHistory() {
+        try {
+            File history = new File("history_" + nick + ".txt");
+
+            PrintWriter fileWriter = new PrintWriter(new FileWriter(history, true));
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(textArea.getText());
+            bufferedWriter.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void saveAllHistory() {
+        try {
+            File allHistory = new File("all_chat_history.txt");
+            PrintWriter fileWriter = new PrintWriter(new FileWriter(allHistory, true));
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(textArea.getText());
+            bufferedWriter.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+    private void loadHistory() throws IOException {
+
+        int posHistory = 100;
+        List<String> historyList = new ArrayList<>();
+        try (BufferedReader bir = new BufferedReader(new FileReader("all_chat_history.txt"))) {
+            String str;
+            while ((str = bir.readLine()) != null) {
+                historyList.add(str);
+            }
+            if (historyList.size() > posHistory) {
+                for (int i = historyList.size() - posHistory; i <= (historyList.size() - 1); i++) {
+                    textArea.appendText(historyList.get(i) + "\n");
+
+
+                }
+
+            }
+
+        }
+
+    }
 }
+
+

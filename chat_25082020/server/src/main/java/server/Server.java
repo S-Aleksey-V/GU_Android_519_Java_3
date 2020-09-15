@@ -17,7 +17,12 @@ public class Server {
 
     public Server() {
         clients = new Vector<>();
-        authService = new SimpleAuthService();
+
+
+        if(!Database.connect()){
+            throw new RuntimeException("Не у далось подключиться к базе данных");
+        }
+        authService = new DBAuthServise();
 
         ServerSocket server = null;
         Socket socket;
@@ -25,8 +30,6 @@ public class Server {
         final int PORT = 8189;
 
         try {
-            Database.connect();
-            System.out.println("подключились к базе");
             server = new ServerSocket(PORT);
             System.out.println("Сервер запущен!");
 
@@ -39,11 +42,8 @@ public class Server {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } finally {
+        }  finally {
+            Database.disconnect();
             try {
                 server.close();
                 Database.disconnect();
